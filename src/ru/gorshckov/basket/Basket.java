@@ -3,15 +3,15 @@ package ru.gorshckov.basket;
 import java.util.List;
 
 public interface Basket {
-    void addProduct(Product product);
+    void addProduct(String product, int quantity);
 
-    void removeProduct(Product product);
+    void removeProduct(String product);
 
-    void updateProductQuantity(Product product, int quantity);
+    void updateProductQuantity(String product, int quantity);
 
     void clear();
 
-    List<Product> getProducts();
+    List<String> getProductList();
 
-    int getProductQuantity(Product name);
+    int getProductQuantity(String product);
 }

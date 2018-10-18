@@ -13,7 +13,6 @@ private int quantity;
         this.quantity = quantity;
     }
 
-
     public String getProduct() {
         return name;
     }
